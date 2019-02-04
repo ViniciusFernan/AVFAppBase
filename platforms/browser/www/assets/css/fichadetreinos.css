@@ -1,0 +1,8 @@
+#listaGrupoMuscular .card .card-header{padding: 0;}
+#listaGrupoMuscular .card .card-header h6 a{padding: .75rem 1.25rem; display: block;}
+#listaGrupoMuscular .card .card-header h6 a:active,
+#listaGrupoMuscular .card .card-header h6 a:hover{text-decoration: none}
+
+[data-toggle="collapse"] .fa:before {  content: "\f139"; }
+
+[data-toggle="collapse"].collapsed .fa:before { content: "\f13a"; }
