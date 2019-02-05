@@ -18,7 +18,7 @@
  */
 
 var urlWebservices="http://avfweb.com.br";
-
+var urlUploads="http://avfweb.com.br/_uploads";
 var app = {
     // Application Constructor
     initialize: function() {
@@ -45,6 +45,12 @@ var app = {
         var devicePlatform = device.platform;
         var serial = ((devicePlatform === 'browser') ? '123456-AVF' : device.serial);
         localStorage.setItem('serial', serial);
+
+        var imgPerfil = (window.localStorage.getItem('imgPerfil') ?  urlUploads +"/"+ usuario.idUsuario +"/"+ window.localStorage.getItem('imgPerfil') : './img/avatar.png');
+        document.getElementById('imgemPerfilMeusDados').src = imgPerfil;
+        document.getElementById('imgemPerfilMeusDadosMenu').src = imgPerfil;
+
+
     },
     // deviceready Event Handler
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
