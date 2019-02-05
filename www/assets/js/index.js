@@ -97,6 +97,10 @@ var app = {
     logout: function () {
         window.localStorage.clear();
         window.location="index.html";
+    },
+
+    exitApp: function(){
+        navigator.app.exitApp();
     }
 
 
