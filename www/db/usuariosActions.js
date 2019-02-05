@@ -6,6 +6,7 @@ var USUARIOS_ACTIONS = {
 
     setUsuario: function(usuario){
         window.localStorage.setItem('usuario', JSON.stringify(usuario));
+        window.localStorage.setItem('imgPerfil', usuario.imgPerfil);
     },
 
 
@@ -55,6 +56,7 @@ var USUARIOS_ACTIONS = {
         }
 
         window.localStorage.setItem('usuario', JSON.stringify(usuario));
+        window.localStorage.setItem('imgPerfil', usuario.imgPerfil);
         return true;
     },
 
