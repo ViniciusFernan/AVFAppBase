@@ -21,7 +21,7 @@ var TREINOS_ACTIONS = {
 
 
         var html = '';
-        if (grupoMuscularExercicios.length > 0){
+        if (grupoMuscularExercicios!==null){
             var idCorrent = '';
             for (var i = 0; i < grupoMuscularExercicios.length; i++){
                 var item = grupoMuscularExercicios[i];
@@ -37,7 +37,7 @@ var TREINOS_ACTIONS = {
                     html += '<div id="collapse-' + item.idGrupoMuscular + '" class="panel-collapse collapse in" data-parent="#accordion" style="padding: 10px 8px">';
                     html += '<ul class="list-group" id="grupo-'+item.idGrupoMuscular+'">';
 
-                    if (exerciciosG.length > 0) {
+                    if (exerciciosG!==null) {
                         for (var j = 0; j < exerciciosG.length; j++) {
                             var exercicios = exerciciosG[j];
                             if (item.idGrupoMuscular == exercicios.idGrupoMuscular) {
