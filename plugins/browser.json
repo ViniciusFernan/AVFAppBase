@@ -1,46 +1,49 @@
 {
-  "prepare_queue": {
-    "installed": [],
-    "uninstalled": []
-  },
-  "config_munge": {
-    "files": {}
-  },
-  "installed_plugins": {
-    "cordova-plugin-battery-status": {
-      "PACKAGE_NAME": "com.avfweb.appbase"
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
     },
-    "cordova-plugin-camera": {
-      "PACKAGE_NAME": "com.avfweb.appbase"
+    "config_munge": {
+        "files": {}
     },
-    "cordova-plugin-console": {
-      "PACKAGE_NAME": "com.avfweb.appbase"
+    "installed_plugins": {
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "com.avfweb.appbase"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.avfweb.appbase"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.avfweb.appbase"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "com.avfweb.appbase"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.avfweb.appbase"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "com.avfweb.appbase"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "com.avfweb.appbase"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.avfweb.appbase"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.avfweb.appbase"
+        },
+        "phonegap-plugin-push": {
+            "PACKAGE_NAME": "com.avfweb.appbase"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "br.com.avfweb.appbase"
+        }
     },
-    "cordova-plugin-contacts": {
-      "PACKAGE_NAME": "com.avfweb.appbase"
-    },
-    "cordova-plugin-device": {
-      "PACKAGE_NAME": "com.avfweb.appbase"
-    },
-    "cordova-plugin-device-motion": {
-      "PACKAGE_NAME": "com.avfweb.appbase"
-    },
-    "cordova-plugin-device-orientation": {
-      "PACKAGE_NAME": "com.avfweb.appbase"
-    },
-    "cordova-plugin-dialogs": {
-      "PACKAGE_NAME": "com.avfweb.appbase"
-    },
-    "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "com.avfweb.appbase"
-    },
-    "phonegap-plugin-push": {
-      "PACKAGE_NAME": "com.avfweb.appbase"
+    "dependent_plugins": {
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.avfweb.appbase"
+        }
     }
-  },
-  "dependent_plugins": {
-    "cordova-plugin-file": {
-      "PACKAGE_NAME": "com.avfweb.appbase"
-    }
-  }
 }

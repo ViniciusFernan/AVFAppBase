@@ -30,6 +30,21 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+
+        var usuario = JSON.parse( window.localStorage.getItem('usuario'));
+        var infoUsuario = document.getElementById("infoUsuario");
+
+        if(usuario !=null && infoUsuario ){
+            var html="";
+            html+="<p class='infoNome'>" + usuario.nome + "</p>";
+            html+="<p class='infoEmail'>" + usuario.email + "</p>";
+
+            document.getElementById('infoUsuario').innerHTML = '<p class="infoNome">' + html +'</p>';
+        }
+
+        var devicePlatform = device.platform;
+        var serial = ((devicePlatform === 'browser') ? '123456-AVF' : device.serial);
+        localStorage.setItem('serial', serial);
     },
     // deviceready Event Handler
     // The scope of 'this' is the event. In order to call the 'receivedEvent'

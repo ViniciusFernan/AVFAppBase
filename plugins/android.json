@@ -1,27 +1,33 @@
 {
-  "prepare_queue": {
-    "installed": [],
-    "uninstalled": []
-  },
-  "config_munge": {
-    "files": {}
-  },
-  "installed_plugins": {
-    "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "com.avfweb.appbase"
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
     },
-    "phonegap-plugin-push": {
-      "ANDROID_SUPPORT_V13_VERSION": "27.+",
-      "FCM_VERSION": "17.0.+",
-      "PACKAGE_NAME": "com.avfweb.appbase"
-    }
-  },
-  "dependent_plugins": {
-    "cordova-support-google-services": {
-      "PACKAGE_NAME": "com.avfweb.appbase"
+    "config_munge": {
+        "files": {}
     },
-    "phonegap-plugin-multidex": {
-      "PACKAGE_NAME": "com.avfweb.appbase"
+    "installed_plugins": {
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.avfweb.appbase"
+        },
+        "phonegap-plugin-push": {
+            "ANDROID_SUPPORT_V13_VERSION": "27.+",
+            "FCM_VERSION": "17.0.+",
+            "PACKAGE_NAME": "com.avfweb.appbase"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "br.com.avfweb.appbase"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-support-google-services": {
+            "PACKAGE_NAME": "com.avfweb.appbase"
+        },
+        "phonegap-plugin-multidex": {
+            "PACKAGE_NAME": "com.avfweb.appbase"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "br.com.avfweb.appbase"
+        }
     }
-  }
 }

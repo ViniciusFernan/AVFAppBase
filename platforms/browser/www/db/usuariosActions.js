@@ -10,11 +10,12 @@ var USUARIOS_ACTIONS = {
 
 
     getUsuarioMicroService: function (email, senha){
+        var serial = window.localStorage.getItem('serial');
         return $.ajax({
             type: 'POST',
             dataType: 'json',
             url: urlWebservices+'/webservice/Usuariosservice/getUsuarioFromEmailAndPassword',
-            data:{ 'email': email, 'senha': senha },
+            data:{ 'email': email, 'senha': senha, 'registroDeDispositivo': serial },
             beforeSend: function(){ },
             complete: function(){ },
             success: function(x){

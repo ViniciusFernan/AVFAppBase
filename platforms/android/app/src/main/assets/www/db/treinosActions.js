@@ -16,53 +16,58 @@ var TREINOS_ACTIONS = {
 
     carregaDadosTabelaGrupoExercicios: function () {
 
-        var sqlite = 'SELECT *, exercicios.nome AS nomeE, exercicios.status AS statusE  FROM exercicios  INNER JOIN grupo_muscular  ON exercicios.idGrupoMuscular=grupo_muscular.idGrupoMuscular';
-        window.AVFDB.transaction(function (tx) {
-            tx.executeSql(sqlite, [], function (x, results) {
-                var grupoMuscularExercicios = [];
-                var html = '';
-                if (results.rows.length > 0) {
-                    var idCorrent = '';
-                    for (var i = 0; i < results.rows.length; i++) {
-                        var item = results.rows.item(i);
+        var grupoMuscularExercicios =  EXERCICIOSANDGRUPOMUSCULAR_ACTIONS.getListaGrupoMuscular();
+        var exerciciosG = EXERCICIOSANDGRUPOMUSCULAR_ACTIONS.getListExercicios();
 
-                        if(item && idCorrent != item.idGrupoMuscular){
-                            html += '<div class="card" data-IDG="' + item.idGrupoMuscular + '">';
-                            html += '<div class="card-header" id="card-' + item.idGrupoMuscular + '">';
-                            html += '<h6 class="mb-0">';
-                            html += '<a data-toggle="collapse" data-parent="#accordion" href="#collapse-' + item.idGrupoMuscular + '" aria-expanded="false" ><i class="fas fa-clipboard-list"></i>  Exercicios para ' + item.nome + ' <span class="qtitemselected"></span><i class="fa float-right" ></i> </a>';
-                            html += '</h6>';
-                            html += '</div>';
-                            html += '<div id="collapse-' + item.idGrupoMuscular + '" class="panel-collapse collapse in" data-parent="#accordion" style="padding: 10px 8px">';
-                            html += '<ul class="list-group" id="grupo-'+item.idGrupoMuscular+'">';
 
-                            for (var j = 0; j < results.rows.length; j++) {
-                                var exercicios = results.rows.item(j);
-                                if(item.idGrupoMuscular==exercicios.idGrupoMuscular){
-                                    html += '<li class="list-group-item"  data-IDE="'+ exercicios.idExercicio +'" > <i class="fas fa-dumbbell"></i> '+exercicios.nomeE+' <span class="badge checkedExe  float-right"><i class="fas fa-check-double"></i></span></li>';
-                                }
+        var html = '';
+        if (grupoMuscularExercicios.length > 0){
+            var idCorrent = '';
+            for (var i = 0; i < grupoMuscularExercicios.length; i++){
+                var item = grupoMuscularExercicios[i];
+                console.log(grupoMuscularExercicios);
+
+                if(item && idCorrent != item.idGrupoMuscular){
+                    html += '<div class="card" data-IDG="' + item.idGrupoMuscular + '">';
+                    html += '<div class="card-header" id="card-' + item.idGrupoMuscular + '">';
+                    html += '<h6 class="mb-0">';
+                    html += '<a data-toggle="collapse" data-parent="#accordion" href="#collapse-' + item.idGrupoMuscular + '" aria-expanded="false" ><i class="fas fa-clipboard-list"></i>  Exercicios para ' + item.nome + ' <span class="qtitemselected"></span><i class="fa float-right" ></i> </a>';
+                    html += '</h6>';
+                    html += '</div>';
+                    html += '<div id="collapse-' + item.idGrupoMuscular + '" class="panel-collapse collapse in" data-parent="#accordion" style="padding: 10px 8px">';
+                    html += '<ul class="list-group" id="grupo-'+item.idGrupoMuscular+'">';
+
+                    if (exerciciosG.length > 0) {
+                        for (var j = 0; j < exerciciosG.length; j++) {
+                            var exercicios = exerciciosG[j];
+                            if (item.idGrupoMuscular == exercicios.idGrupoMuscular) {
+                                html += '<li class="list-group-item"  data-IDE="' + exercicios.idExercicio + '" > <i class="fas fa-dumbbell"></i> ' + exercicios.nome + ' <span class="badge checkedExe  float-right"><i class="fas fa-check-double"></i></span></li>';
                             }
-
-                            html += '</ul>';
-                            html += '</div>';
-                            html += '</div>';
                         }
-
-                        idCorrent = item.idGrupoMuscular;
-
-
                     }
 
+                    html += '</ul>';
+                    html += '</div>';
+                    html += '</div>';
                 }
 
-                $('#listaGrupoMuscular').html(html);
-                var fechatreinos = JSON.parse(window.localStorage.getItem('fichatreinos'));
-                $.each(fechatreinos, function (x, val){
-                    $('li[data-ide='+val+']').addClass('selectedItem');
-                });
-                TREINOS_ACTIONS.counItemSelected();
+                idCorrent = item.idGrupoMuscular;
+
+
+            }
+
+        }
+
+        $('#listaGrupoMuscular').html(html);
+        var fichatreinos = JSON.parse(window.localStorage.getItem('fichatreinos'));
+        if(fichatreinos.length > 0){
+            $.each(fichatreinos, function (x, val){
+                $('li[data-ide='+val+']').addClass('selectedItem');
             });
-        });
+            TREINOS_ACTIONS.counItemSelected();
+        }
+
+
 
     },
 

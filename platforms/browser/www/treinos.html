@@ -47,7 +47,7 @@
         .checkedExe{font-size: 100%; display: none}
         .selectedItem .checkedExe{display: inline-block}
         .selectedItem{ background: #0099e1; color:#fff; font-weight:bolder; }
-        .inputlight{ height: 2em !important; min-height: 2em !important; }
+        .inputlight{ height: 2em !important; min-height: 2em !important; border: 1px solid #cccccc!important;}
 
     </style>
 </head>
@@ -75,37 +75,41 @@
 
         <section role="main" class="ui-content container conteudoBody" data-role="home" >
             <h4>Selecione os exercicios que deseja na sua ficha diaria</h4>
-            <div class="form-group col-sm-12">
+            <div class="card container" style="margin-bottom: 15px; padding: 15px">
                 <div class="row">
-                    <label class="col-sm-4 col-form-label pl-0 pr-0">Peso atual:</label>
-                    <div class="col-sm-8">
+                    <label class="col-4 col-form-label pl-0 pr-0">Peso atual:</label>
+                    <div class="col-8">
                         <input class="form-control-plaintext inputlight" name="pesoAtual" value="" >
                     </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class=" col-sm-6 col-xs-6">
-                    <div class="row">
-                        <label class="col-sm-4 col-form-label pl-0 pr-0">Ganhar massa:</label>
-                        <div class="col-sm-8">
-                            <input class="toggle-one" checked type="checkbox" name="GanhoMassa" data-toggle="toggle" data-on="Sim" data-off="Não">
+
+                <div class="row">
+                    <div class=" col-sm-6 col-6">
+                        <div class="row">
+                            <label class="col-sm-4 col-form-label pl-0 pr-0">Ganhar massa:</label>
+                            <div class="col-sm-8">
+                                <input class="toggle-one" checked type="checkbox" name="GanhoMassa" data-toggle="toggle" data-on="Sim" data-off="Não">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="  col-sm-6 col-6">
+
+                        <div class="row">
+                            <label class="col-sm-4 col-form-label pl-0 pr-0">Perder peso:</label>
+                            <div class="col-sm-8">
+                                <input class="toggle-one"  type="checkbox" name="GanhoMassa" data-toggle="toggle" data-on="Sim" data-off="Não">
+                            </div>
                         </div>
                     </div>
 
                 </div>
 
-                <div class="  col-sm-6 col-xs-6">
-
-                    <div class="row">
-                        <label class="col-sm-4 col-form-label pl-0 pr-0">Perder peso:</label>
-                        <div class="col-sm-8">
-                            <input class="toggle-one" checked type="checkbox" name="GanhoMassa" data-toggle="toggle" data-on="Sim" data-off="Não">
-                        </div>
-                    </div>
-                </div>
-
             </div>
+
+
 
             <div class="card">
                 <div id="accordion">
@@ -124,6 +128,7 @@
 
 <script src="./assets/js/jquery-1.11.2.js"></script>
 <script src="./assets/plugins/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
+<script type="text/javascript" src="./db/exerciciosAndGrupoMuscularActions.js"></script>
 <script type="text/javascript" src="./db/treinosActions.js"></script>
 
 

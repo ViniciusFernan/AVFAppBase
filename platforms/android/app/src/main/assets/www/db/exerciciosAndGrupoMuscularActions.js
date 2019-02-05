@@ -6,15 +6,16 @@ var EXERCICIOSANDGRUPOMUSCULAR_ACTIONS = {
 
 
     getListExerciciosMicroService: function(){
-        return $.ajax({
+        $.ajax({
             type: 'POST',
             dataType: 'json',
             url: urlWebservices+'/webservice/Exerciciosservice/getAllExercicios',
             beforeSend: function(){ },
             complete: function(){ },
             success: function(exercicios){
-                window.localStorage.setItem('exercicios', JSON.stringify(exercicios));
-                return exercicios;
+                if(exercicios.type=='success'){
+                    window.localStorage.setItem('exercicios', JSON.stringify(exercicios.data));
+                }
             },
             error: function (error) {
                 return false;
@@ -24,21 +25,29 @@ var EXERCICIOSANDGRUPOMUSCULAR_ACTIONS = {
 
 
     getListExercicios: function(){
+        var EXERCICIOS = JSON.parse(window.localStorage.getItem('exercicios'));
+        if(EXERCICIOS==null){
+            EXERCICIOSANDGRUPOMUSCULAR_ACTIONS.getListExerciciosMicroService();
+        }
         return JSON.parse(window.localStorage.getItem('exercicios'));
+
+
     },
 
 
 
     getListGrupoMuscularMicroService: function(){
-        return $.ajax({
+        $.ajax({
             type: 'POST',
             dataType: 'json',
             url: urlWebservices+'/webservice/Exerciciosservice/getAllGrupoMuscular',
             beforeSend: function(){ },
             complete: function(){ },
             success: function(grupoMuscular){
-                window.localStorage.setItem('grupoMuscular', JSON.stringify(grupoMuscular));
-                return grupoMuscular;
+                if(grupoMuscular.type=='success'){
+                    window.localStorage.setItem('grupoMuscular', JSON.stringify(grupoMuscular.data));
+                }
+
             },
             error: function (error) {
                 return false;
@@ -49,6 +58,10 @@ var EXERCICIOSANDGRUPOMUSCULAR_ACTIONS = {
 
 
     getListaGrupoMuscular: function(){
+        var grupoMuscular = JSON.parse(window.localStorage.getItem('grupoMuscular'));
+        if(grupoMuscular==null){
+            EXERCICIOSANDGRUPOMUSCULAR_ACTIONS.getListGrupoMuscularMicroService();
+        }
         return JSON.parse(window.localStorage.getItem('grupoMuscular'));
     }
 

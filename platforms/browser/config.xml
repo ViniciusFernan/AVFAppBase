@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.avfweb.appbase" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="br.com.avfweb.appbase" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>AVF Appbase</name>
     <description>
         App base com acesso a banco de dados local e acesso a webservice
@@ -8,8 +8,8 @@
         Vinicius Fernandes
     </author>
     <content src="index.html" />
-    <icon src="img/logoavf.png" />
-    <splash src="img/logoavf.png" />
+    <icon src="www/img/logoavf.png" />
+    <splash src="www/img/logoavf.png" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -18,5 +18,7 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="android-minSdkVersion" value="14" />
+    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+    <preference name="Fullscreen" value="false" />
+    <preference name="phonegap-version" value="cli-8.0.0" />
 </widget>
