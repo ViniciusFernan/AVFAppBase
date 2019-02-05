@@ -25,7 +25,6 @@ var TREINOS_ACTIONS = {
             var idCorrent = '';
             for (var i = 0; i < grupoMuscularExercicios.length; i++){
                 var item = grupoMuscularExercicios[i];
-                console.log(grupoMuscularExercicios);
 
                 if(item && idCorrent != item.idGrupoMuscular){
                     html += '<div class="card" data-IDG="' + item.idGrupoMuscular + '">';
