@@ -59,7 +59,7 @@ var TREINOS_ACTIONS = {
 
         $('#listaGrupoMuscular').html(html);
         var fichatreinos = JSON.parse(window.localStorage.getItem('fichatreinos'));
-        if(fichatreinos.length > 0){
+        if(fichatreinos!==null){
             $.each(fichatreinos, function (x, val){
                 $('li[data-ide='+val+']').addClass('selectedItem');
             });
