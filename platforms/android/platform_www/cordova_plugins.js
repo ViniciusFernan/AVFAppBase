@@ -204,6 +204,14 @@ module.exports = [
     "clobbers": [
       "window.FileTransfer"
     ]
+  },
+  {
+    "id": "cordova-plugin-device.device",
+    "file": "plugins/cordova-plugin-device/www/device.js",
+    "pluginId": "cordova-plugin-device",
+    "clobbers": [
+      "device"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -214,7 +222,8 @@ module.exports.metadata =
   "phonegap-plugin-multidex": "1.0.0",
   "phonegap-plugin-push": "2.2.3",
   "cordova-plugin-file": "6.0.1",
-  "cordova-plugin-file-transfer": "1.5.1"
+  "cordova-plugin-file-transfer": "1.5.1",
+  "cordova-plugin-device": "1.1.7"
 };
 // BOTTOM OF METADATA
 });

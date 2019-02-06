@@ -30,13 +30,25 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+    },
+    // deviceready Event Handler
+    // The scope of 'this' is the event. In order to call the 'receivedEvent'
+    // function, we must explicitly call 'app.receivedEvent(...);'
+    onDeviceReady: function() {
+        app.receivedEvent('deviceready');
+    },
+    // Update DOM on a Received Event
+    receivedEvent: function(id) {
+        var parentElement = document.getElementById(id);
+        parentElement.setAttribute('style', 'display:block;');
+
 
         var usuario = JSON.parse( window.localStorage.getItem('usuario'));
         var infoUsuario = document.getElementById("infoUsuario");
 
         if(usuario !=null && infoUsuario ){
             var html="";
-            html+="<p class='infoNome'>" + usuario.nome + "</p>";
+            html+="<p class='infoNome'>" + usuario.nomeCompleto + "</p>";
             html+="<p class='infoEmail'>" + usuario.email + "</p>";
 
             document.getElementById('infoUsuario').innerHTML = '<p class="infoNome">' + html +'</p>';
@@ -50,18 +62,6 @@ var app = {
         ((document.getElementById('imgemPerfilMeusDados')) ? document.getElementById('imgemPerfilMeusDados').src = imgPerfil : '' );
         ((document.getElementById('imgemPerfilMeusDadosMenu')) ? document.getElementById('imgemPerfilMeusDadosMenu').src = imgPerfil : '' );
 
-
-    },
-    // deviceready Event Handler
-    // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, we must explicitly call 'app.receivedEvent(...);'
-    onDeviceReady: function() {
-        app.receivedEvent('deviceready');
-    },
-    // Update DOM on a Received Event
-    receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        parentElement.setAttribute('style', 'display:block;');
     },
 
 

@@ -101,14 +101,11 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-
-
     <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1" />
     <plugin name="cordova-plugin-camera" source="npm" spec="~4.0.2" />
     <plugin name="cordova-plugin-media-capture" source="npm" spec="~1.2.0" />
     <plugin name="cordova-plugin-console" source="npm" spec="~1.0.2" />
     <plugin name="cordova-plugin-contacts" source="npm" spec="~2.0.1" />
-    <plugin name="cordova-plugin-device" source="npm" spec="~1.1.1" />
     <plugin name="cordova-plugin-device-motion" source="npm" spec="~1.2.0" />
     <plugin name="cordova-plugin-device-orientation" source="npm" spec="~1.0.2" />
     <plugin name="cordova-plugin-dialogs" source="npm" spec="~1.2.0" />
@@ -122,16 +119,13 @@
     <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" />
     <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
-
     <plugin name="cordova-plugin-splashscreen" spec="~3.2.2" />
-
     <plugin name="phonegap-plugin-push" spec="~2.1.2">
         <variable name="FCM_VERSION" value="11.0.1" />
         <variable name="ANDROID_SUPPORT_V13_VERSION" value="27.+" />
         <variable name="SENDER_ID" value="1:188349334350:android:df201d13e7261425" />
     </plugin>
-
-
     <engine name="android" spec="~7.0.0" />
     <engine name="ios" spec="~4.5.4" />
+    <plugin name="cordova-plugin-device" spec="~1.1.7" />
 </widget>
