@@ -36,7 +36,7 @@ var app = {
 
         if(usuario !=null && infoUsuario ){
             var html="";
-            html+="<p class='infoNome'>" + usuario.nome + "</p>";
+            html+="<p class='infoNome'>" + usuario.nomeCompleto + "</p>";
             html+="<p class='infoEmail'>" + usuario.email + "</p>";
 
             document.getElementById('infoUsuario').innerHTML = '<p class="infoNome">' + html +'</p>';

@@ -9,7 +9,7 @@ var EXERCICIOSANDGRUPOMUSCULAR_ACTIONS = {
         $.ajax({
             type: 'POST',
             dataType: 'json',
-            url: urlWebservices+'/webservice/Exerciciosservice/getAllExercicios',
+            url: urlWebservices+'/Exerciciosservice/getAllExercicios',
             beforeSend: function(){ },
             complete: function(){ },
             success: function(exercicios){
@@ -40,7 +40,7 @@ var EXERCICIOSANDGRUPOMUSCULAR_ACTIONS = {
         $.ajax({
             type: 'POST',
             dataType: 'json',
-            url: urlWebservices+'/webservice/Exerciciosservice/getAllGrupoMuscular',
+            url: urlWebservices+'/Exerciciosservice/getAllGrupoMuscular',
             beforeSend: function(){ },
             complete: function(){ },
             success: function(grupoMuscular){

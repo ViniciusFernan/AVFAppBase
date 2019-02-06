@@ -244,7 +244,7 @@
                         ft.upload(
                             fotoURI_G,
                             urlWebservices+'/Usuariosservice/updateImagemPerfil',
-                            function (x) {
+                            function(x){
                                 var resp = JSON.parse(x.response);
                                 if(resp.type=="success" ){
                                     navigator.notification.alert('Foto de perfil atualizada com sucesso ', '','NOVA FOTO', 'OK');
@@ -255,12 +255,10 @@
                                     //smallImage.src = fotoURI_C;
 
                                 }else{
-                                    navigator.notification.alert('Error ao atualizar foto', '','NOVA FOTO', 'FECHAR');
+                                    navigator.notification.alert('Error ao atualizar foto de perfil', '','NOVA FOTO', 'FECHAR');
                                 }
                             },
                             function (error) {
-                                var erroAt = JSON.parse(error);
-                                alert(erroAt);
                                 navigator.notification.alert('Error ao atualizar foto, Tente novamente mais tarde', '','NOVA FOTO', 'FECHAR');
 
                             },
