@@ -17,7 +17,7 @@
  * under the License.
  */
 
-var urlWebservices="http://avfweb.com.br";
+var urlWebservices="http://avfweb.com.br/webservice";
 var urlUploads="http://avfweb.com.br/_uploads";
 var app = {
     // Application Constructor

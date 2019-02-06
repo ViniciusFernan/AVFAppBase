@@ -15,7 +15,7 @@ var USUARIOS_ACTIONS = {
         return $.ajax({
             type: 'POST',
             dataType: 'json',
-            url: urlWebservices+'/webservice/Usuariosservice/getUsuarioFromEmailAndPassword',
+            url: urlWebservices+'/Usuariosservice/getUsuarioFromEmailAndPassword',
             data:{ 'email': email, 'senha': senha, 'registroDeDispositivo': serial },
             beforeSend: function(){ },
             complete: function(){ },
@@ -35,7 +35,7 @@ var USUARIOS_ACTIONS = {
             return $.ajax({
                 type: 'POST',
                 dataType: 'json',
-                url: urlWebservices+'/webservice/Usuariosservice/setUsuarioUpdate',
+                url: urlWebservices+'/Usuariosservice/setUsuarioUpdate',
                 data:Data,
                 beforeSend: function(){ },
                 complete: function(){ },

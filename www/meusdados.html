@@ -259,7 +259,10 @@
                                 }
                             },
                             function (error) {
+                                var erroAt = JSON.parse(error);
+                                alert(erroAt);
                                 navigator.notification.alert('Error ao atualizar foto, Tente novamente mais tarde', '','NOVA FOTO', 'FECHAR');
+
                             },
                             { chunkedMode:false, fileKey:"file", fileName:'imgPerfil', mimeType:"image/jpeg" ,
                                 params: {idUsuario:usuario.idUsuario,appID:passWID }
