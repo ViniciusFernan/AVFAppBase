@@ -57,12 +57,9 @@
             if (onpanmove) element.removeEventListener('touchmove', touchmove);
             if (onpanend) element.removeEventListener('touchend', touchend);
         };
-
-
     }
 
     function pullToRefresh (opts) {
-        addIconRefresh();
         opts = Object.assign({
             // https://bugs.chromium.org/p/chromium/issues/detail?id=766938
             scrollable: document.body,
@@ -91,7 +88,6 @@
             container.classList.remove('pull-to-refresh--' + cls);
         }
 
-
         function scrollTop() {
             if (!scrollable || [window, document, document.body, document.documentElement].includes(scrollable)) {
                 return document.documentElement.scrollTop || document.body.scrollTop;
@@ -100,27 +96,13 @@
             }
         }
 
-        function addIconRefresh(){
-            var html='';
-            html += '<div class="pull-to-refresh-material__control" style="opacity: 1; transform: translate3d(-50%, 60px, 0px) scale(0.01);">';
-            html += '<svg class="pull-to-refresh-material__icon" fill="#4285f4" width="24" height="24" viewBox="0 0 24 24">';
-            html += '   <path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"></path>';
-            html += '   <path d="M0 0h24v24H0z" fill="none"></path>';
-            html += '</svg>';
-            html += '<svg class="pull-to-refresh-material__spinner" width="24" height="24" viewBox="25 25 50 50"><circle class="pull-to-refresh-material__path" cx="50" cy="50" r="20" fill="none" stroke="#4285f4" stroke-width="4" stroke-miterlimit="10"></circle></svg>';
-            html += '</div>';
-            document.querySelector('body').insertAdjacentHTML('beforeend', html);
-        }
-
-
         return ontouchpan({
             element: container,
 
             onpanmove: function onpanmove(e) {
                 var d = e.deltaY;
-                console.log(scrollTop());
-                if (scrollTop() > 0 || d < 0 && !state || state in { aborting: 1, refreshing: 1, restoring: 1 }) return;
 
+                if (scrollTop() > 0 || d < 0 && !state || state in { aborting: 1, refreshing: 1, restoring: 1 }) return;
 
                 e.preventDefault();
 
@@ -185,15 +167,96 @@
 
 })));
 
-pullToRefresh({
-    container: document.querySelector('body'),
-    scrollable: document.querySelector('#deviceready'),
-    animates: ptrAnimatesMaterial,
 
-    refresh() {
-        return new Promise(resolve => {
-            setTimeout(window.location.reload(), 2000)
-        });
-    }
+(function (global, factory) {
+    typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+        typeof define === 'function' && define.amd ? define(factory) :
+            (global.ptrAnimatesMaterial = factory());
+}(this, (function () { 'use strict';
+
+    var animates = {
+        pulling: function pulling(d, opts) {
+            if (!opts.elControl) opts.elControl = opts.container.querySelector('.pull-to-refresh-material__control');
+
+            var threshold = opts.threshold,
+                elControl = opts.elControl;
+
+
+            var p = d / threshold;
+            if (p > 1) p = 1;else p = p * p * p;
+            var y = d / 2.5;
+
+            elControl.style.opacity = p;
+            elControl.style.transform = y ? 'translate3d(-50%, ' + y + 'px, 0) rotate(' + 360 * p + 'deg)' : '';
+        },
+        refreshing: function refreshing(_ref) {
+            var elControl = _ref.elControl,
+                threshold = _ref.threshold;
+
+            elControl.style.transition = 'transform 0.2s';
+            elControl.style.transform = 'translate3d(-50%, ' + threshold / 2.5 + 'px, 0)';
+        },
+        aborting: function aborting(_ref2) {
+            var elControl = _ref2.elControl;
+
+            return new Promise(function (resolve) {
+                if (elControl.style.transform) {
+                    elControl.style.transition = 'transform 0.3s, opacity 0.15s';
+                    elControl.style.transform = 'translate3d(-50%, 0, 0)';
+                    elControl.style.opacity = 0;
+                    elControl.addEventListener('transitionend', function () {
+                        elControl.style.transition = '';
+                        resolve();
+                    });
+                } else {
+                    resolve();
+                }
+            });
+        },
+        restoring: function restoring(_ref3) {
+            var elControl = _ref3.elControl;
+
+            return new Promise(function (resolve) {
+                elControl.style.transition = 'transform 0.3s';
+                elControl.style.transform += ' scale(0.01)';
+                elControl.addEventListener('transitionend', function () {
+                    elControl.style.transition = '';
+                    resolve();
+                });
+            });
+        }
+    };
+
+    return animates;
+
+})));
+
+
+window.addEventListener("load", function(){
+
+    var html='';
+    html += '<div class="pull-to-refresh-material__control" style="opacity: 1; transform: translate3d(-50%, 60px, 0px) scale(0.01);">';
+    html += '<svg class="pull-to-refresh-material__icon" fill="#4285f4" width="24" height="24" viewBox="0 0 24 24">';
+    html += '   <path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"></path>';
+    html += '   <path d="M0 0h24v24H0z" fill="none"></path>';
+    html += '</svg>';
+    html += '<svg class="pull-to-refresh-material__spinner" width="24" height="24" viewBox="25 25 50 50"><circle class="pull-to-refresh-material__path" cx="50" cy="50" r="20" fill="none" stroke="#4285f4" stroke-width="4" stroke-miterlimit="10"></circle></svg>';
+    html += '</div>';
+
+
+    document.getElementsByTagName("body")[0].insertAdjacentHTML('beforeend', html);
+
+    pullToRefresh({
+        container: document.querySelector('body'),
+        animates: ptrAnimatesMaterial,
+
+        refresh() {
+            return new Promise(resolve => {
+                setTimeout(window.location.reload(), 800);
+        })
+        }
+    });
+
+
 });
 
