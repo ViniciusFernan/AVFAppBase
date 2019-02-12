@@ -1,18 +1,1 @@
-{
-  "background_color": "#FFF",
-  "display": "standalone",
-  "name": "AVF Appbase",
-  "short_name": "AVF Appbase",
-  "version": "br.com.avfweb.appbase",
-  "description": "App base com acesso a banco de dados local e acesso a webservice",
-  "author": "Vinicius Fernandes",
-  "icons": [
-    {
-      "src": "www/img/logoavf.png",
-      "type": "image/png",
-      "sizes": "undefinedxundefined"
-    }
-  ],
-  "start_url": "index.html",
-  "theme_color": "#0099e1"
-}
+{"background_color":"#FFF","display":"standalone","name":"AVF Appbase","short_name":"AVF Appbase","version":"br.com.avfweb.appbase","description":"App base com acesso a banco de dados local e acesso a webservice","author":"Vinicius Fernandes","icons":[{"src":"www/img/logoavf.png","type":"image/png","sizes":"undefinedxundefined"}],"start_url":"index.html","theme_color":"#0099e1","gcm_sender_id":"996231231186"}

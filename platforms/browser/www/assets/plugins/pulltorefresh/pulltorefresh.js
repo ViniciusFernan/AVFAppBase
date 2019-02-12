@@ -93,6 +93,7 @@
 
 
         function scrollTop() {
+            console.log(scrollable);
             if (!scrollable || [window, document, document.body, document.documentElement].includes(scrollable)) {
                 return document.documentElement.scrollTop || document.body.scrollTop;
             } else {
@@ -187,13 +188,14 @@
 
 pullToRefresh({
     container: document.querySelector('body'),
-    scrollable: document.querySelector('#deviceready'),
+   // scrollable: document.querySelector('#deviceready'),
     animates: ptrAnimatesMaterial,
 
     refresh() {
         return new Promise(resolve => {
             setTimeout(window.location.reload(), 2000)
-        });
+    });
     }
 });
+
 
