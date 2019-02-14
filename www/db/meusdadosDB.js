@@ -13,7 +13,10 @@ var MEUSDADOS_DB = {
             table +='<form class="updateMeusDados" method="post" >';
             table +='<input type="hidden" name="idUsuario" value="'+item.idUsuario+'">';
 
-            table += '<div class="row mb-3"><div class="col-6 pr-2 boximgUser"><img src="./img/avatar.png" class="imgUser" id="imgemPerfilMeusDados" > <i class="fas fa-camera novaImagem"></i> </div><div class="col-6 pl-0"> <p class="card-title form-group" > /' + ((item.nomeUsuario) ? item.nomeUsuario : '')  + '</p> <p class="card-text form-group">Email: '+item.email+'</p></div></div>';
+            table += '<div class="row mb-3">';
+            table += '<div class="col-12"> <div class="boximgUser"><img src="./img/avatar.png" class="imgUser" id="imgemPerfilMeusDados" > <i class="fas fa-camera novaImagem"></i></div> </div>';
+            table += '<div class="col-12 pl-0 text-center"> <p class="card-title form-group bold" > /' + ((item.nomeUsuario) ? item.nomeUsuario : '')  + '</p> <p class="card-text form-group bold">Email: '+item.email+'</p></div>';
+            table += '</div>';
 
             table +='<p class="card-title form-group" >Nome: <input type="text" name="nome" value="' + item.nomeCompleto + '"  class="form-control" ></p>';
             table +='<p class="card-text form-group">CPF: <input type="text" name="CPF" value="'+((item.CPF) ? item.CPF : '')+'"  class="form-control" ></p>';
