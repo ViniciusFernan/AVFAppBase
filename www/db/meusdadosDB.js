@@ -15,7 +15,7 @@ var MEUSDADOS_DB = {
 
             table += '<div class="row mb-3">';
             table += '<div class="col-12"> <div class="boximgUser"><img src="./img/avatar.png" class="imgUser" id="imgemPerfilMeusDados" > <i class="fas fa-camera novaImagem"></i></div> </div>';
-            table += '<div class="col-12 pl-0 text-center"> <p class="card-title form-group bold" > @' + ((item.nomeUsuario) ? item.nomeUsuario : '')  + '</p> <p class="card-text form-group bold"><small>Email:</small> '+item.email+'</p></div>';
+            table += '<div class="col-12 pl-0 text-center"> <p class="card-title form-group bold" > @' + ((item.nomeUsuario) ? item.nomeUsuario : '')  + '</p> <p class="card-text form-group bold"><small class="x-small">Email:</small> '+item.email+'</p></div>';
             table += '</div> <hr/>';
 
             table +='<p class="card-title form-group" >Nome: <input type="text" name="nome" value="' + item.nomeCompleto + '"  class="form-control" ></p>';

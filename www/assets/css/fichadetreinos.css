@@ -1,7 +1,10 @@
-#listaGrupoMuscular .card .card-header{padding: 0;}
-#listaGrupoMuscular .card .card-header h6 a{padding: .75rem 1.25rem; display: block;}
-#listaGrupoMuscular .card .card-header h6 a:active,
-#listaGrupoMuscular .card .card-header h6 a:hover{text-decoration: none}
+#listaGrupoMuscular .card{margin-bottom: 5px}
+#listaGrupoMuscular .card .card-header{padding: 0; border-bottom: none; }
+#listaGrupoMuscular .card .card-header a{padding: .75rem 1.25rem .70rem;  display: block;}
+#listaGrupoMuscular .card .card-header a:active,
+#listaGrupoMuscular .card .card-header a:hover{text-decoration: none}
+
+#listaGrupoMuscular .card .card-header a i.iconRight{position: absolute; right: 14px;  font-size: 20px;  }
 
 [data-toggle="collapse"] .fa:before {  content: "\f139"; }
 

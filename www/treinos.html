@@ -46,11 +46,16 @@
 
     <style>
         .card-body{text-align: left;}
-        #listaGrupoMuscular li:hover, #listaGrupoMuscular li:active{ background: rgba(0, 180, 255, 0.59); color:#fff; font-weight:bolder; cursor: pointer;  }
-        .checkedExe{font-size: 100%; display: none}
+        #listaGrupoMuscular li:hover, #listaGrupoMuscular li:active{ font-weight:bolder; cursor: pointer;  }
+        .checkedExe{ font-size: 100%; display: none; position: absolute; right: 0; }
         .selectedItem .checkedExe{display: inline-block}
         .selectedItem{ background: #0099e1; color:#fff; font-weight:bolder; }
         .inputlight{ height: 2em !important; min-height: 2em !important; border: 1px solid #cccccc!important;}
+
+        #listaGrupoMuscular .panel-collapse{ order-left: none; border-right: none; }
+
+        .no-border-lr{ border-bottom: none; }
+        .no-border-lr li{ border-right: none; border-left: none; }
 
     </style>
 </head>
@@ -137,7 +142,6 @@
 
 <script src="./assets/js/jquery-1.11.2.js"></script>
 <script src="./assets/plugins/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
-<script type="text/javascript" src="./db/exerciciosAndGrupoMuscularActions.js"></script>
 <script type="text/javascript" src="./db/treinosActions.js"></script>
 
 
@@ -175,13 +179,12 @@
         TREINOS_ACTIONS.counItemSelected();
 
         var data=[];
-        $.each($('#listaGrupoMuscular .card') ,function(x, card){
+        $.each($('#listaGrupoMuscular .card'), function(x, card){
             var itens = $(card).find('.panel-collapse .list-group .list-group-item');
-            $.each($(itens) ,function(i, li){
+            $.each($(itens), function(i, li){
                 if($(li).hasClass('selectedItem')){
                     data.push($(li).data('ide'));
                 }
-
             });
         });
         window.localStorage.setItem('fichatreinos', JSON.stringify(data));
