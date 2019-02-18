@@ -62,6 +62,9 @@ var app = {
         ((document.getElementById('imgemPerfilMeusDados')) ? document.getElementById('imgemPerfilMeusDados').src = imgPerfil : '' );
         ((document.getElementById('imgemPerfilMeusDadosMenu')) ? document.getElementById('imgemPerfilMeusDadosMenu').src = imgPerfil : '' );
 
+
+        document.addEventListener("backbutton", this.exitApp, false);
+
     },
 
 
