@@ -16,7 +16,7 @@
     <preference name="phonegap-version" value="cli-8.0.0" />
 
     <preference name="SplashScreenDelay" value="6000" />
-    <preference name="FadeSplashScreenDuration" value="1000"/>
+    <preference name="FadeSplashScreenDuration" value="800"/>
 
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
