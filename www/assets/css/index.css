@@ -28,7 +28,7 @@ body *{text-shadow:none !important;}
 .fixedTop{ position: fixed; top: 0; left: 0; width: 100%; z-index: 50 }
 .container.conteudoBody{    margin-top: 55px; }
 
-.footer{font-size: 12px; padding: 8px 0!important;  }
+.footer{font-size: 12px; padding: 8px 0!important; z-index: 2; }
 
 .loader{  position: fixed;  width: 35%; left:50%;  top: 50%;  transform: translate(-50%, -50%);  z-index: 1000}
 
