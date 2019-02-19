@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e3173485-0809-4a51-98b8-73935282c474" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/css/index.css" afterPath="$PROJECT_DIR$/www/assets/css/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/dashboard.html" afterPath="$PROJECT_DIR$/www/dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/meusdados.html" afterPath="$PROJECT_DIR$/www/meusdados.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/treinos.html" afterPath="$PROJECT_DIR$/www/treinos.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,11 +51,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/assets/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
+            <state relative-caret-position="544">
               <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="12" column="57" lean-forward="false" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -69,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="treinos.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="treinos.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/treinos.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="82" column="18" lean-forward="false" selection-start-line="82" selection-start-column="18" selection-end-line="82" selection-end-column="18" />
+            <state relative-caret-position="352">
+              <caret line="64" column="56" lean-forward="false" selection-start-line="64" selection-start-column="56" selection-end-line="64" selection-end-column="56" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#2;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -84,8 +96,8 @@
       <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1122">
-              <caret line="66" column="18" lean-forward="true" selection-start-line="62" selection-start-column="12" selection-end-line="66" selection-end-column="18" />
+            <state relative-caret-position="148">
+              <caret line="48" column="56" lean-forward="false" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#2;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -96,8 +108,8 @@
       <file leaf-file-name="meusdados.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/meusdados.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1496">
-              <caret line="88" column="18" lean-forward="false" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
+            <state relative-caret-position="352">
+              <caret line="70" column="56" lean-forward="false" selection-start-line="70" selection-start-column="56" selection-end-line="70" selection-end-column="56" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#2;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -142,7 +154,6 @@
         <option value="$PROJECT_DIR$/www/db/loginDB.js" />
         <option value="$PROJECT_DIR$/google-services.json" />
         <option value="$PROJECT_DIR$/www/assets/css/navbar.css" />
-        <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/platforms/ios/www/db/usuariosActions.js" />
         <option value="$PROJECT_DIR$/www/db/usuariosActions.js" />
         <option value="$PROJECT_DIR$/www/index.html" />
@@ -153,10 +164,11 @@
         <option value="$PROJECT_DIR$/www/db/treinosActions.js" />
         <option value="$PROJECT_DIR$/www/assets/js/actionGlobais.js" />
         <option value="$PROJECT_DIR$/www/assets/js/index.js" />
+        <option value="$PROJECT_DIR$/www/assets/css/index.css" />
+        <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/www/dashboard.html" />
         <option value="$PROJECT_DIR$/www/meusdados.html" />
         <option value="$PROJECT_DIR$/www/treinos.html" />
-        <option value="$PROJECT_DIR$/www/assets/css/index.css" />
       </list>
     </option>
   </component>
@@ -205,6 +217,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -221,8 +235,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -365,21 +377,9 @@
       <workItem from="1550495901818" duration="79000" />
       <workItem from="1550500929319" duration="96000" />
       <workItem from="1550505200484" duration="197000" />
-      <workItem from="1550521128538" duration="13000" />
-    </task>
-    <task id="LOCAL-00032" summary="novo accordion">
-      <created>1546455236626</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1546455236626</updated>
-    </task>
-    <task id="LOCAL-00033" summary="novo accordion">
-      <created>1547236338463</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1547236338464</updated>
+      <workItem from="1550521128538" duration="31000" />
+      <workItem from="1550579852592" duration="53000" />
+      <workItem from="1550580404657" duration="26000" />
     </task>
     <task id="LOCAL-00034" summary="novo accordion">
       <created>1547481005489</created>
@@ -710,17 +710,31 @@
       <option name="project" value="LOCAL" />
       <updated>1550505355538</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="avisosbox">
+      <created>1550521149183</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1550521149183</updated>
+    </task>
+    <task id="LOCAL-00082" summary="avisosbox">
+      <created>1550579888577</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1550579888577</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203415000" />
+    <option name="totallyTimeSpent" value="203512000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1448" y="163" width="1456" height="876" extended-state="6" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24641834" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25358167" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -957,13 +971,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="115" column="77" lean-forward="false" selection-start-line="115" selection-start-column="77" selection-end-line="115" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/platforms/ios/www/db/usuariosActions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1051,10 +1058,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="12" column="57" lean-forward="false" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="66" column="18" lean-forward="true" selection-start-line="62" selection-start-column="12" selection-end-line="66" selection-end-column="18" />
+        <state relative-caret-position="148">
+          <caret line="48" column="56" lean-forward="false" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#2;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -1063,8 +1086,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/meusdados.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1496">
-          <caret line="88" column="18" lean-forward="false" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
+        <state relative-caret-position="352">
+          <caret line="70" column="56" lean-forward="false" selection-start-line="70" selection-start-column="56" selection-end-line="70" selection-end-column="56" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#2;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -1073,19 +1096,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/treinos.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="82" column="18" lean-forward="false" selection-start-line="82" selection-start-column="18" selection-end-line="82" selection-end-column="18" />
+        <state relative-caret-position="352">
+          <caret line="64" column="56" lean-forward="false" selection-start-line="64" selection-start-column="56" selection-end-line="64" selection-end-column="56" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#2;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/assets/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
