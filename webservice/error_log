@@ -1,0 +1,9 @@
+[05-Feb-2019 11:19:21 Brazil/East] PHP Fatal error:  Uncaught Error: Call to undefined method UsuariosModel::registrarDispositivoUsuario() in /home2/avfweb34/public_html/webservice/controllers/Usuariosservice.controller.php:32
+Stack trace:
+#0 /home2/avfweb34/public_html/webservice/lib/Application.class.php(129): UsuariosserviceController->getUsuarioFromEmailAndPasswordAction()
+#1 /home2/avfweb34/public_html/webservice/index.php(15): Application->dispatch()
+#2 {main}
+  thrown in /home2/avfweb34/public_html/webservice/controllers/Usuariosservice.controller.php on line 32
+[12-Feb-2019 13:55:20 Brazil/East] PHP Notice:  Undefined index: passID in /home2/avfweb34/public_html/webservice/models/usuarios/Usuarios.model.php on line 101
+[12-Feb-2019 13:55:21 Brazil/East] PHP Notice:  Undefined index: passID in /home2/avfweb34/public_html/webservice/models/usuarios/Usuarios.model.php on line 101
+[12-Feb-2019 13:55:24 Brazil/East] PHP Notice:  Undefined index: passID in /home2/avfweb34/public_html/webservice/models/usuarios/Usuarios.model.php on line 101
