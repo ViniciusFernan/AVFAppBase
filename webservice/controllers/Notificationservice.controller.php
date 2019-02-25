@@ -15,6 +15,22 @@ class NotificationserviceController extends MainController {
         echo json_encode('NO Action');
     }
 
+    public function TestGCMAction(){
+
+        require ABSPATH . "/models/usuarios/Usuarios.model.php";
+        $usuario = new UsuariosModel;
+        $usuario->getDispositivoUsuario('123');
+        foreach($usuario->getResult() as $key => $value ){
+            if(!empty($value['gcmid'])){
+                $chaveDoDispositivo=$value['gcmid'];
+                $titulo='Novo lead';
+                $mensagem='Você acaba de receber um novo lead!';
+                $this->sendMesagemGCMAction($chaveDoDispositivo, $titulo, $mensagem);
+            }
+        }
+        exit;
+    }
+
     public function getNotificationsAction(){
         $resp=[];
         $data=[];

@@ -126,6 +126,23 @@ class UsuariosModel {
 
     }
 
+
+
+    public function getDispositivoUsuario($idUsuario){
+        $this->Result=[];
+
+        $sql = 'SELECT gcmid FROM  app_id_user
+                WHERE app_id_user.idUsuario=:idUsuario';
+
+        $Select = new Select;
+        $Select->FullSelect($sql, "idUsuario={$idUsuario}");
+        if (!empty($Select->getResult())):
+            $this->Result = $Select->getResult();
+        endif;
+
+    }
+
+
     public function registrarDispositivoUsuario($idUsuario, $idDispositivo){
         $idRegistroApp = $this->checkRegistroDeDispositivoDoUsuario($idUsuario, $idDispositivo);
         if(empty($idRegistroApp)){
