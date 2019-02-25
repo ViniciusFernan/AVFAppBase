@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3173485-0809-4a51-98b8-73935282c474" name="Default" comment="Add notification users">
+    <list default="true" id="e3173485-0809-4a51-98b8-73935282c474" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webservice/controllers/Notificationservice.controller.php" afterPath="$PROJECT_DIR$/webservice/controllers/Notificationservice.controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webservice/models/usuarios/Usuarios.model.php" afterPath="$PROJECT_DIR$/webservice/models/usuarios/Usuarios.model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/js/index.js" afterPath="$PROJECT_DIR$/www/assets/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/meusdados.html" afterPath="$PROJECT_DIR$/www/meusdados.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,59 +15,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/index.html">
+      <file leaf-file-name="meusdados.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/meusdados.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="75" lean-forward="false" selection-start-line="35" selection-start-column="75" selection-end-line="35" selection-end-column="75" />
+            <state relative-caret-position="2193">
+              <caret line="129" column="20" lean-forward="true" selection-start-line="129" selection-start-column="20" selection-end-line="129" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="firebaseGCM.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/assets/js/firebaseGCM.js">
+      <file leaf-file-name="meusdadosDB.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/db/meusdadosDB.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/assets/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+            <state relative-caret-position="306">
+              <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding>
-                <marker date="1551097722283" expanded="true" signature="3209:3307" ph="..." />
-                <marker date="1551097722283" expanded="true" signature="3342:3451" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Notificationservice.controller.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webservice/controllers/Notificationservice.controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Usuarios.model.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/webservice/models/usuarios/Usuarios.model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="142" column="5" lean-forward="false" selection-start-line="142" selection-start-column="5" selection-end-line="142" selection-end-column="5" />
-              <folding>
-                <marker date="1551098033968" expanded="true" signature="1300:1411" ph="SELECT * FRO... usuarios" />
-                <marker date="1551098033968" expanded="true" signature="1890:1999" ph="SELECT * FRO... usuarios" />
-                <marker date="1551098033968" expanded="true" signature="3567:3652" ph="SELECT gcmid... app_id_user" />
-                <marker date="1551098033968" expanded="true" signature="4435:4580" ph="SELECT * FRO... app_id_user" />
+                <marker date="1551124867070" expanded="true" signature="3223:3321" ph="..." />
+                <marker date="1551124867070" expanded="true" signature="3356:3465" ph="..." />
               </folding>
             </state>
           </provider>
@@ -123,16 +98,16 @@
         <option value="$PROJECT_DIR$/www/assets/css/fichadetreinos.css" />
         <option value="$PROJECT_DIR$/www/db/treinosActions.js" />
         <option value="$PROJECT_DIR$/www/assets/js/actionGlobais.js" />
-        <option value="$PROJECT_DIR$/www/meusdados.html" />
         <option value="$PROJECT_DIR$/www/treinos.html" />
         <option value="$PROJECT_DIR$/www/assets/css/index.css" />
         <option value="$PROJECT_DIR$/config.xml" />
-        <option value="$PROJECT_DIR$/www/dashboard.html" />
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/assets/js/firebaseGCM.js" />
-        <option value="$PROJECT_DIR$/www/assets/js/index.js" />
         <option value="$PROJECT_DIR$/webservice/controllers/Notificationservice.controller.php" />
         <option value="$PROJECT_DIR$/webservice/models/usuarios/Usuarios.model.php" />
+        <option value="$PROJECT_DIR$/www/dashboard.html" />
+        <option value="$PROJECT_DIR$/www/meusdados.html" />
+        <option value="$PROJECT_DIR$/www/assets/js/index.js" />
       </list>
     </option>
   </component>
@@ -160,10 +135,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-1448" />
+    <option name="y" value="163" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -181,31 +156,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="AVFAppBase" type="b2602c69:ProjectViewProjectNode" />
               <item name="AVFAppBase" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="AVFAppBase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AVFAppBase" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="webservice" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="AVFAppBase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AVFAppBase" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="webservice" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="AVFAppBase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AVFAppBase" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="webservice" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="usuarios" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="AVFAppBase" type="b2602c69:ProjectViewProjectNode" />
@@ -230,6 +186,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -246,13 +203,13 @@
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp\www\Vinicius\AVFAppBase\www\assets\plugins" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp\www\Vinicius\AVFAppBase\www\db" />
       <recent name="C:\wamp\www\Vinicius\AVFAppBase\www\assets\css" />
       <recent name="C:\wamp\www\Vinicius\AVFAppBase\www" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\Vinicius\AVFAppBase\www\assets\plugins" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -382,13 +339,8 @@
       <workItem from="1550856461515" duration="98000" />
       <workItem from="1551097510143" duration="388000" />
       <workItem from="1551097909125" duration="227000" />
-    </task>
-    <task id="LOCAL-00043" summary="novo modelo">
-      <created>1549288389921</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1549288389921</updated>
+      <workItem from="1551106364656" duration="252000" />
+      <workItem from="1551124572315" duration="294000" />
     </task>
     <task id="LOCAL-00044" summary="novo modelo">
       <created>1549288641654</created>
@@ -726,18 +678,24 @@
       <option name="project" value="LOCAL" />
       <updated>1551097836922</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="dashboard time show aviso">
+      <created>1551106528928</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1551106528928</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="204891000" />
+    <option name="totallyTimeSpent" value="205437000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1448" y="163" width="1456" height="876" extended-state="6" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20788912" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28510028" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -799,7 +757,8 @@
     <MESSAGE value="Add class animated bounceInRight in body" />
     <MESSAGE value="Add firebase GCM" />
     <MESSAGE value="Add notification users" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add notification users" />
+    <MESSAGE value="dashboard time show aviso" />
+    <option name="LAST_COMMIT_MESSAGE" value="dashboard time show aviso" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -971,13 +930,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/db/meusdadosDB.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="217" lean-forward="false" selection-start-line="17" selection-start-column="217" selection-end-line="17" selection-end-column="217" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/db/loginDB.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -997,9 +949,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="38" column="50" lean-forward="false" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
-          <folding>
-            <marker date="1550250729900" expanded="true" signature="1703:1719" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1046,28 +995,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="69" column="134" lean-forward="false" selection-start-line="69" selection-start-column="134" selection-end-line="69" selection-end-column="134" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/meusdados.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="70" column="56" lean-forward="false" selection-start-line="70" selection-start-column="56" selection-end-line="70" selection-end-column="56" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#2;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="35" column="75" lean-forward="false" selection-start-line="35" selection-start-column="75" selection-end-line="35" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1075,18 +1006,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/assets/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-          <folding>
-            <marker date="1551097722283" expanded="true" signature="3209:3307" ph="..." />
-            <marker date="1551097722283" expanded="true" signature="3342:3451" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1094,7 +1013,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1102,11 +1020,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="142" column="5" lean-forward="false" selection-start-line="142" selection-start-column="5" selection-end-line="142" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="75" column="57" lean-forward="false" selection-start-line="75" selection-start-column="57" selection-end-line="75" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/db/meusdadosDB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/meusdados.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2193">
+          <caret line="129" column="20" lean-forward="true" selection-start-line="129" selection-start-column="20" selection-end-line="129" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding>
-            <marker date="1551098033968" expanded="true" signature="1300:1411" ph="SELECT * FRO... usuarios" />
-            <marker date="1551098033968" expanded="true" signature="1890:1999" ph="SELECT * FRO... usuarios" />
-            <marker date="1551098033968" expanded="true" signature="3567:3652" ph="SELECT gcmid... app_id_user" />
-            <marker date="1551098033968" expanded="true" signature="4435:4580" ph="SELECT * FRO... app_id_user" />
+            <marker date="1551124867070" expanded="true" signature="3223:3321" ph="..." />
+            <marker date="1551124867070" expanded="true" signature="3356:3465" ph="..." />
           </folding>
         </state>
       </provider>

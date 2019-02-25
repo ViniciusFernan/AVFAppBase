@@ -53,15 +53,17 @@ var app = {
             html+="<p class='infoEmail'>" + usuario.email + "</p>";
 
             document.getElementById('infoUsuario').innerHTML = '<p class="infoNome">' + html +'</p>';
+
+            var imgPerfil = (window.localStorage.getItem('imgPerfil') ?  urlUploads +"/"+ usuario.idUsuario +"/perfil/"+ window.localStorage.getItem('imgPerfil') : './img/avatar.png');
+            ((document.getElementById('imgemPerfilMeusDados')) ? document.getElementById('imgemPerfilMeusDados').src = imgPerfil : '' );
+            ((document.getElementById('imgemPerfilMeusDadosMenu')) ? document.getElementById('imgemPerfilMeusDadosMenu').src = imgPerfil : '' );
+
         }
 
         var devicePlatform = device.platform;
         var serial = ((devicePlatform === 'browser') ? '123456-AVF' : device.serial);
         localStorage.setItem('serial', serial);
 
-        var imgPerfil = (window.localStorage.getItem('imgPerfil') ?  urlUploads +"/"+ usuario.idUsuario +"/perfil/"+ window.localStorage.getItem('imgPerfil') : './img/avatar.png');
-        ((document.getElementById('imgemPerfilMeusDados')) ? document.getElementById('imgemPerfilMeusDados').src = imgPerfil : '' );
-        ((document.getElementById('imgemPerfilMeusDadosMenu')) ? document.getElementById('imgemPerfilMeusDadosMenu').src = imgPerfil : '' );
 
         setTimeout(function(){
             document.getElementById('deviceready').classList.remove('animated');
