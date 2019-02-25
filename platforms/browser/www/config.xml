@@ -21,4 +21,6 @@
     <preference name="AndroidPersistentFileLocation" value="Compatibility" />
     <preference name="Fullscreen" value="false" />
     <preference name="phonegap-version" value="cli-8.0.0" />
+    <preference name="SplashScreenDelay" value="2000" />
+    <preference name="FadeSplashScreenDuration" value="800" />
 </widget>

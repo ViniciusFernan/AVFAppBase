@@ -19,6 +19,7 @@
 
 var urlWebservices="http://avfweb.com.br/webservice";
 var urlUploads="http://avfweb.com.br/_uploads";
+var GOOGLE_SENDER_ID = '967269032484';
 var app = {
     // Application Constructor
     initialize: function() {

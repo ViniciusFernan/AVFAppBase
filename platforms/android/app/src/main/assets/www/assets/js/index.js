@@ -19,6 +19,7 @@
 
 var urlWebservices="http://avfweb.com.br/webservice";
 var urlUploads="http://avfweb.com.br/_uploads";
+var GOOGLE_SENDER_ID = '967269032484';
 var app = {
     // Application Constructor
     initialize: function() {
@@ -62,6 +63,12 @@ var app = {
         ((document.getElementById('imgemPerfilMeusDados')) ? document.getElementById('imgemPerfilMeusDados').src = imgPerfil : '' );
         ((document.getElementById('imgemPerfilMeusDadosMenu')) ? document.getElementById('imgemPerfilMeusDadosMenu').src = imgPerfil : '' );
 
+        setTimeout(function(){
+            document.getElementById('deviceready').classList.remove('animated');
+        }, 800);
+
+        document.addEventListener("backbutton", this.exitApp, false);
+
     },
 
 
@@ -96,11 +103,11 @@ var app = {
     avisos: function(title, text, icon){
         var html = '';
         var iconL = icon ? icon : 'fa-bullhorn';
-        html +='<div id="cardAvisos" class="card mb-3 shadow animated bounceInDown" style="position: relative; " >';
-        html +='    <i class="fas fa-times removeCard" style="position: absolute; top: 2px; right: 8px; font-size: 24px; color: #ccc"></i>';
+        html +='<div id="cardAvisos" class="card mb-3 shadow animated bounceInDown" >';
+        html +='    <i class="fas fa-times removeCard"></i>';
         html +='    <div class="row no-gutters">';
-        html +='        <div class="col-4" style="background-color: #0b5a9e; position: relative">';
-        html +='            <i class="fas fa-bullhorn" style="color: #fff; vertical-align: middle; font-size: 60px; position: absolute; top: 50%; transform: translate(-50%, -50%)"></i>';
+        html +='        <div class="col-4 box-icon" >';
+        html +='            <i class="fas '+iconL+' icon-item" ></i>';
         html +='        </div>';
         html +='        <div class="col-8">';
         html +='            <div class="card-body">';

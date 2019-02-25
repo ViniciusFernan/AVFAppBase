@@ -62,7 +62,7 @@
 
 <body>
 <div class="app">
-    <div id="deviceready" data-role="page"  style="display: none">
+    <div id="deviceready" class="animated bounceInRight" data-role="page"  style="display: none">
         <section data-role="header" class="fixedTop header-avf">
             <h1><img class="logo" src="./img/logoavfwhite.png" style="max-height: 30px;max-width: 150px;"></h1>
             <i class="fas fa-align-justify toogle-menu open-menu"></i>
@@ -77,12 +77,8 @@
             <div class="menubox" data-include="includes/menu.html"></div>
 
             <div class="footer-menu flex-row">
-                <p class="col-6" style="padding: 0; margin: 0; border-right: 1px solid #ccc" >
+                <p class="col-12" style="padding: 0; margin: 0; border-right: 1px solid #ccc" >
                     <a href="#" class="avf-btn-default btn-default flex-col btn-logout" style="display: block; padding: 8px 0 " onclick="app.logout();"><b>Logout</b>  <i class="fas fa-power-off icon-logout"></i></a>
-                </p>
-
-                <p class="col-6" style="padding: 0; margin: 0" >
-                    <a href="#" class="avf-btn-default btn-default flex-col btn-sair" style="display: block; padding: 8px 0 " onclick="app.exitApp();"><b>Sair</b> <i class="fas fa-sign-out-alt icon-logout"></i></a>
                 </p>
             </div>
         </section>
