@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3173485-0809-4a51-98b8-73935282c474" name="Default" comment="">
+    <list default="true" id="e3173485-0809-4a51-98b8-73935282c474" name="Default" comment="dashboard time show aviso">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/js/index.js" afterPath="$PROJECT_DIR$/www/assets/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/meusdados.html" afterPath="$PROJECT_DIR$/www/meusdados.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/js/firebaseGCM.js" afterPath="$PROJECT_DIR$/www/assets/js/firebaseGCM.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,35 +14,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="meusdados.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/meusdados.html">
+      <file leaf-file-name="firebaseGCM.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/assets/js/firebaseGCM.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2193">
-              <caret line="129" column="20" lean-forward="true" selection-start-line="129" selection-start-column="20" selection-end-line="129" selection-end-column="20" />
+            <state relative-caret-position="255">
+              <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="meusdadosDB.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/db/meusdadosDB.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/assets/js/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-              <folding>
-                <marker date="1551124867070" expanded="true" signature="3223:3321" ph="..." />
-                <marker date="1551124867070" expanded="true" signature="3356:3465" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -102,12 +78,12 @@
         <option value="$PROJECT_DIR$/www/assets/css/index.css" />
         <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/www/index.html" />
-        <option value="$PROJECT_DIR$/www/assets/js/firebaseGCM.js" />
         <option value="$PROJECT_DIR$/webservice/controllers/Notificationservice.controller.php" />
         <option value="$PROJECT_DIR$/webservice/models/usuarios/Usuarios.model.php" />
         <option value="$PROJECT_DIR$/www/dashboard.html" />
         <option value="$PROJECT_DIR$/www/meusdados.html" />
         <option value="$PROJECT_DIR$/www/assets/js/index.js" />
+        <option value="$PROJECT_DIR$/www/assets/js/firebaseGCM.js" />
       </list>
     </option>
   </component>
@@ -185,8 +161,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -340,14 +316,9 @@
       <workItem from="1551097510143" duration="388000" />
       <workItem from="1551097909125" duration="227000" />
       <workItem from="1551106364656" duration="252000" />
-      <workItem from="1551124572315" duration="294000" />
-    </task>
-    <task id="LOCAL-00044" summary="novo modelo">
-      <created>1549288641654</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1549288641654</updated>
+      <workItem from="1551124572315" duration="903000" />
+      <workItem from="1551212407077" duration="76000" />
+      <workItem from="1551212525289" duration="34000" />
     </task>
     <task id="LOCAL-00045" summary="novo modelo">
       <created>1549288855028</created>
@@ -685,17 +656,25 @@
       <option name="project" value="LOCAL" />
       <updated>1551106528928</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="dashboard time show aviso">
+      <created>1551124888354</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1551124888354</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205437000" />
+    <option name="totallyTimeSpent" value="206156000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1448" y="163" width="1456" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28510028" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29369628" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -744,7 +723,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="nova connection" />
     <MESSAGE value="nova acão meusdados" />
     <MESSAGE value="novo icone meusdados" />
@@ -1002,13 +980,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/assets/js/firebaseGCM.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webservice/controllers/Notificationservice.controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -1027,7 +998,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
           <caret line="75" column="57" lean-forward="false" selection-start-line="75" selection-start-column="57" selection-end-line="75" selection-end-column="57" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <marker date="1551124867070" expanded="true" signature="3223:3321" ph="..." />
+            <marker date="1551124867070" expanded="true" signature="3356:3465" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1041,20 +1022,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/meusdados.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2193">
-          <caret line="129" column="20" lean-forward="true" selection-start-line="129" selection-start-column="20" selection-end-line="129" selection-end-column="20" />
+        <state relative-caret-position="0">
+          <caret line="129" column="20" lean-forward="false" selection-start-line="129" selection-start-column="20" selection-end-line="129" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/assets/js/index.js">
+    <entry file="file://$PROJECT_DIR$/www/assets/js/firebaseGCM.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <marker date="1551124867070" expanded="true" signature="3223:3321" ph="..." />
-            <marker date="1551124867070" expanded="true" signature="3356:3465" ph="..." />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

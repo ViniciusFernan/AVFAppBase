@@ -36,13 +36,11 @@ var firebaseGCM={
 
 
             push.on('registration', function (data) {
-                var currentRegId = localStorage.getItem('gcmId');
-                if (currentRegId !== data.registrationId) {
-                    currentRegId = data.registrationId;
+                var currentRegId = window.localStorage.getItem('gcmId');
+                if (currentRegId !== data.registrationId){
+                    window.localStorage.setItem('gcmId', data.registrationId);
                 }
-                localStorage.setItem('gcmId', currentRegId);
-                firebaseGCM.registroDoDispositivo(currentRegId);
-
+                firebaseGCM.registroDoDispositivo(data.registrationId);
             });
 
             push.on('error', function (e) {
@@ -56,6 +54,11 @@ var firebaseGCM={
                     data.title,         // title
                     'Ok'                // buttonName
                 );
+
+                if(data.additionalData.url!==undefined || data.additionalData.url!==null){
+                    window.location.href = './'+data.additionalData.url;
+                }
+
             });
 
 
